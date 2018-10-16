@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="穿梭在人群里的他">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="Linux的常用指令"/>
+  <meta property="og:description" content="我的个人博客" />
+  <meta property="og:site_name" content="帅气依旧的我"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="帅气依旧的我" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>帅气依旧的我</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Linux的常用指令</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  首页
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/随笔">
+                  
+                  心情随笔
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/PHP">
+                  
+                  PHP
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/Javascript">
+                  
+                  Javascript
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/Mysql">
+                  
+                  Mysql
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/Linux">
+                  
+                  Linux
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By 穿梭在人群里的他</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-10-16</span>
+            <span class="time">14:56:17</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
+
+<a href="/categories/Linux/">Linux</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/服务器/">#服务器</a> <a class="tag" href="/tags/Linux/">#Linux</a>
+
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h4 id="ls指令-：显示当前目录的所有文件"><a href="#ls指令-：显示当前目录的所有文件" class="headerlink" title="ls指令 ：显示当前目录的所有文件"></a>ls指令 ：显示当前目录的所有文件</h4><p>相关选项 ：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">-l ：list缩写，代表以列表形式显示所有文件</span><br><span class="line">-a ：all缩写，代表显示所有文件（包括隐藏文件）</span><br><span class="line">可以简写：   ll      ls -al(ls -la)</span><br><span class="line"></span><br><span class="line">补充：ls 可以配合管道  配合具体文件名称（文件夹名称），查看其详细</span><br><span class="line">内容 ，一般和-l进行使用</span><br><span class="line">|grep       ls -l /ect/grub.conf</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h4 id="pwd-查看当前所在目录"><a href="#pwd-查看当前所在目录" class="headerlink" title="pwd: 查看当前所在目录"></a>pwd: 查看当前所在目录</h4><h4 id="cd-目录跳转-文件夹-文件夹-cd-cd"><a href="#cd-目录跳转-文件夹-文件夹-cd-cd" class="headerlink" title="cd   目录跳转  ..    /文件夹     文件夹  cd /     cd ~"></a>cd   目录跳转  ..    /文件夹     文件夹  cd /     cd ~</h4><h4 id="clear-清屏"><a href="#clear-清屏" class="headerlink" title="clear 清屏"></a>clear 清屏</h4><h4 id="su-用户名-su-root-su-caotong-切换到某个用户"><a href="#su-用户名-su-root-su-caotong-切换到某个用户" class="headerlink" title="su 用户名    su root  su caotong  切换到某个用户"></a>su 用户名    su root  su caotong  切换到某个用户</h4><h4 id="logout-：退出指令—针对命令行"><a href="#logout-：退出指令—针对命令行" class="headerlink" title="logout ：退出指令—针对命令行"></a>logout ：退出指令—针对命令行</h4><h4 id="Ctrl-Alt-F1-：切换到图形界面"><a href="#Ctrl-Alt-F1-：切换到图形界面" class="headerlink" title="Ctrl + Alt + F1 ：切换到图形界面"></a>Ctrl + Alt + F1 ：切换到图形界面</h4><h4 id="Ctrl-Alt-F2-F6-：切换到字符界面"><a href="#Ctrl-Alt-F2-F6-：切换到字符界面" class="headerlink" title="Ctrl + Alt + F2~F6 ：切换到字符界面"></a>Ctrl + Alt + F2~F6 ：切换到字符界面</h4><h4 id="shutdown-：关机指令"><a href="#shutdown-：关机指令" class="headerlink" title="shutdown ：关机指令"></a>shutdown ：关机指令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">相关选项：</span><br><span class="line">① shutdown  -h  分钟数 ：多少分钟后关机（真实关机）</span><br><span class="line">② shutdown  -r  分钟数 ：多少分钟后重启</span><br><span class="line">③ shutdown  -k  分钟数 ：多少分钟后关机（只发出警告，不关机）</span><br><span class="line">④ shutdown  -c ：取消关机，也可以使用快捷键Ctrl + C</span><br></pre></td></tr></table></figure>
+<h4 id="halt指令-：立即关机"><a href="#halt指令-：立即关机" class="headerlink" title="halt指令 ：立即关机"></a>halt指令 ：立即关机</h4><h4 id="reboot指令-：立即重启"><a href="#reboot指令-：立即重启" class="headerlink" title="reboot指令 ：立即重启"></a>reboot指令 ：立即重启</h4><h4 id="vi-vim编辑器操作"><a href="#vi-vim编辑器操作" class="headerlink" title="vi/vim编辑器操作"></a>vi/vim编辑器操作</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">输入vi或者vim进入编辑器</span><br><span class="line"></span><br><span class="line">① 命令模式（Esc），只能实现关键词搜索、复制、粘贴、删除等功能</span><br><span class="line">② 编辑模式（输入a或i），如果进行进行代码的编辑工作，必须在编辑模式下</span><br><span class="line">③ 末行模式（在命令模式下输出冒号：），文件的保存、退出、文件切换等等</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">vim filename ：打开指定的文件，如果文件不存在会自动创建该文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">命令模式：</span><br><span class="line">① yy ：复制当前行</span><br><span class="line">   nyy ：从当前行开始复制n行</span><br><span class="line">② p ：粘贴 从当前光标所在的位置开始粘贴</span><br><span class="line">③ dd ：删除当前行</span><br><span class="line">   ndd ：从当前行开始删除n行</span><br><span class="line">④ u ：撤销，相当于Windows中的Ctrl + Z</span><br><span class="line"></span><br><span class="line">末行模式：</span><br><span class="line">:<span class="built_in">set</span> nu ：显示行号</span><br><span class="line">:<span class="built_in">set</span> nonu ：取消行号</span><br><span class="line">/关键词 ：高亮显示所有关键词  按n进行查找</span><br><span class="line">:noh ：取消所有关键词高亮</span><br><span class="line"></span><br><span class="line">num1,num2 co num3 ：把从num1行到num2行的代码插入到num3行的后面</span><br><span class="line"></span><br><span class="line">:w ：保存文件</span><br><span class="line">:q ：退出</span><br><span class="line">:wq ：保存并退出  </span><br><span class="line">特别注意：有些情况下，有些系统文件不允许保存，这个时候可以使用强制保存或强制退出指令。</span><br><span class="line">:w! ：强制保存</span><br><span class="line">:q! ：强制退出</span><br><span class="line">:wq! ：强制保存并退出</span><br><span class="line">使用:0代表跳转到第1行</span><br><span class="line">使用:$代表调整到最后1行</span><br></pre></td></tr></table></figure>
+<h4 id="rpm-是进行安装卸载rpm文件的关键词"><a href="#rpm-是进行安装卸载rpm文件的关键词" class="headerlink" title="rpm 是进行安装卸载rpm文件的关键词"></a>rpm 是进行安装卸载rpm文件的关键词</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">rpm  -qa 查询所有安装文件</span><br><span class="line">rpm  -qa | grep  vim</span><br><span class="line">说明 |grep 管道，可以查询各种名字</span><br><span class="line"></span><br><span class="line">卸载</span><br><span class="line">rpm -e 名称（vim-组件的名称）</span><br><span class="line">安装</span><br><span class="line">rpm  -ivh  软件名称 ：安装软件</span><br></pre></td></tr></table></figure>
+<h4 id="ls配合管道查询？"><a href="#ls配合管道查询？" class="headerlink" title="ls配合管道查询？"></a>ls配合管道查询？</h4><h3 id="重置密码"><a href="#重置密码" class="headerlink" title="重置密码"></a>重置密码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">passwd  用户名名称+回车</span><br><span class="line">passwd root+回车</span><br></pre></td></tr></table></figure>
+<h4 id="黑色文件：代表普通文件"><a href="#黑色文件：代表普通文件" class="headerlink" title="黑色文件：代表普通文件"></a>黑色文件：代表普通文件</h4><h4 id="深蓝色文件：代表文件夹"><a href="#深蓝色文件：代表文件夹" class="headerlink" title="深蓝色文件：代表文件夹"></a>深蓝色文件：代表文件夹</h4><h4 id="浅蓝色文件：软链接文件（相当于Windows中的快捷方式）"><a href="#浅蓝色文件：软链接文件（相当于Windows中的快捷方式）" class="headerlink" title="浅蓝色文件：软链接文件（相当于Windows中的快捷方式）"></a>浅蓝色文件：软链接文件（相当于Windows中的快捷方式）</h4><h4 id="tail-n-行号-文件名称-查看文件的后几行"><a href="#tail-n-行号-文件名称-查看文件的后几行" class="headerlink" title="*   tail -n 行号 文件名称  查看文件的后几行"></a>*   tail -n 行号 文件名称  查看文件的后几行</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -n 2 /etc/group</span><br></pre></td></tr></table></figure>
+<h4 id="组的增删改"><a href="#组的增删改" class="headerlink" title="组的增删改"></a>组的增删改</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">添加组</span><br><span class="line">groupadd 组名  			添加一个组 默认ID</span><br><span class="line">groupadd -g 组名     添加组的时候，指定ID</span><br><span class="line">修改组</span><br><span class="line">groupmod -n 新组名 旧组名</span><br><span class="line">groupmod -g 新ID   组名</span><br><span class="line">删除组</span><br><span class="line">groupdel 组名</span><br></pre></td></tr></table></figure>
+<h4 id="用户的增删改"><a href="#用户的增删改" class="headerlink" title="用户的增删改"></a>用户的增删改</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">用户添加</span><br><span class="line">useradd指令 ：添加用户   会默认生成组和家</span><br><span class="line">-g group_name ：代表添加用户时指定用户的所属组  说明：参数在中间，组名在最后</span><br><span class="line">-d home -m：添加用户时指定用户的家，如果不指定默认/home/用户名    说明：加-m</span><br><span class="line"></span><br><span class="line">用户修改</span><br><span class="line"></span><br><span class="line">usermod 指令 ：修改用户信息</span><br><span class="line">相关选项：</span><br><span class="line">-c comment ：修改用户的备注信息  说明：参数在中间，组名在最后</span><br><span class="line"> </span><br><span class="line">-l login_name ：修改用户的名称   说明：参数在中间，组名在最后</span><br><span class="line"> </span><br><span class="line">-d home_dir ：修改用户的家     说明：参数在中间，组名在最后</span><br><span class="line"> </span><br><span class="line">-g group_name ：修改用户的所属组   说明：参数在中间，组名在最后</span><br><span class="line"></span><br><span class="line">用户删除</span><br><span class="line">userdel 指令 ：删除用户</span><br><span class="line">userdel 指令 ：删除用户 -r ：删除用户时同时删除用户的家</span><br><span class="line">说明：-r指令，只针对于默认创建的家文件夹，如果家文件夹被修改，那么无法使用</span><br><span class="line">解决办法：先通过userdel删除用户，然后手动删除家文件夹</span><br></pre></td></tr></table></figure>
+<h4 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">passwd 用户名+回车</span><br><span class="line">passwd 【参数】  用户名+回车</span><br><span class="line">-S（大写的） ：Status缩写，查看用户口令状态</span><br><span class="line">特别说明：如果一个用户没有密码，也会显示密码已被锁定。</span><br><span class="line">-l ：lock缩写，代表锁定用户，不能登录操作系统</span><br><span class="line">-u ：unlock缩写，代表解锁用户</span><br><span class="line">-d ：del缩写，代表删除用户密码</span><br></pre></td></tr></table></figure>
+<h4 id="touch-文件名（也可以指定目录）-生成一个文本文件"><a href="#touch-文件名（也可以指定目录）-生成一个文本文件" class="headerlink" title="* touch 文件名（也可以指定目录）  生成一个文本文件"></a>* touch 文件名（也可以指定目录）  生成一个文本文件</h4><h4 id="id-用户名-查看用户所属的各种属性的ID值（这里主要用到组ID）"><a href="#id-用户名-查看用户所属的各种属性的ID值（这里主要用到组ID）" class="headerlink" title="id 用户名  查看用户所属的各种属性的ID值（这里主要用到组ID）"></a>id 用户名  查看用户所属的各种属性的ID值（这里主要用到组ID）</h4><h4 id="groups-：查看的内容比较少，只能查看用户的所属"><a href="#groups-：查看的内容比较少，只能查看用户的所属" class="headerlink" title="groups ：查看的内容比较少，只能查看用户的所属"></a>groups ：查看的内容比较少，只能查看用户的所属</h4><h3 id="注意不要混淆文件内容："><a href="#注意不要混淆文件内容：" class="headerlink" title="注意不要混淆文件内容："></a>注意不要混淆文件内容：</h3><h4 id="group-组信息文件"><a href="#group-组信息文件" class="headerlink" title="group    组信息文件"></a>group    组信息文件</h4><h4 id="passwd-用户信息的文件"><a href="#passwd-用户信息的文件" class="headerlink" title="passwd  用户信息的文件"></a>passwd  用户信息的文件</h4><h4 id="gshadow-查看分组密码"><a href="#gshadow-查看分组密码" class="headerlink" title="gshadow 查看分组密码"></a>gshadow 查看分组密码</h4><h4 id="shadow-普通用户的密码文件"><a href="#shadow-普通用户的密码文件" class="headerlink" title="shadow    普通用户的密码文件"></a>shadow    普通用户的密码文件</h4><h4 id="用户—-附属组"><a href="#用户—-附属组" class="headerlink" title="用户—-附属组"></a>用户—-附属组</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">gpasswd  【选项】  组名</span><br><span class="line">相关选项：</span><br><span class="line">-a user_name ：添加用户到附属组中</span><br><span class="line">gpasswd -a 用户名 附属组名</span><br><span class="line">-d user_name ：从附属组中删除用户</span><br></pre></td></tr></table></figure>
+<h4 id="隔壁老王命令"><a href="#隔壁老王命令" class="headerlink" title="隔壁老王命令"></a>隔壁老王命令</h4><h5 id="说明：在当前用户下，创建文件，这个文件是属于当前用户、当前组"><a href="#说明：在当前用户下，创建文件，这个文件是属于当前用户、当前组" class="headerlink" title="说明：在当前用户下，创建文件，这个文件是属于当前用户、当前组"></a>说明：在当前用户下，创建文件，这个文件是属于当前用户、当前组</h5><h5 id="newgrp-组名"><a href="#newgrp-组名" class="headerlink" title="newgrp  组名"></a>newgrp  组名</h5><h5 id="如果使用了newgrp-newgroup的简称），那么，此时创建的文件，就属于别的组了。"><a href="#如果使用了newgrp-newgroup的简称），那么，此时创建的文件，就属于别的组了。" class="headerlink" title="如果使用了newgrp(newgroup的简称），那么，此时创建的文件，就属于别的组了。"></a>如果使用了newgrp(newgroup的简称），那么，此时创建的文件，就属于别的组了。</h5><h5 id="whoami-输出当前用户"><a href="#whoami-输出当前用户" class="headerlink" title="whoami  输出当前用户"></a>whoami  输出当前用户</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">① chfn [用户名称] ：更改用户的资料信息</span><br><span class="line"> </span><br><span class="line">② finger [用户名称] ：查看用户的资料信息（需要安装 rpm -ivh)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sudu -l 查看普通用户所拥有的管理员权限</span><br><span class="line">sudu 权限和路径 具体内容 ：普通用户去执行超级管理员权限，需要用sudu开头</span><br><span class="line"></span><br><span class="line">whereis 命令名称：得到该命令的具体路径，用于给普通用户添加这个权限</span><br></pre></td></tr></table></figure>
+<h5 id="可读-r-4"><a href="#可读-r-4" class="headerlink" title="可读 r 4"></a>可读 r 4</h5><h5 id="可写-w-2"><a href="#可写-w-2" class="headerlink" title="可写 w 2"></a>可写 w 2</h5><h5 id="可执行-x-1"><a href="#可执行-x-1" class="headerlink" title="可执行 x 1"></a>可执行 x 1</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1 可执行</span><br><span class="line">2 可写</span><br><span class="line">3 可执行 可写</span><br><span class="line">4 可读 r 4</span><br><span class="line">5 可执行 可读</span><br><span class="line">6 可读 可写</span><br><span class="line">7 拥有全部权限</span><br></pre></td></tr></table></figure>
+<h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir 文件夹名</span><br><span class="line">-p ：递归创建 mkdir -p</span><br><span class="line"> </span><br><span class="line">-m ：创建目录时指定目录权限 mkdir -m</span><br><span class="line">联合使用：</span><br><span class="line">mkdir -m 777 -p shop/images</span><br></pre></td></tr></table></figure>
+<h5 id="rmdir-默认删除空文件夹"><a href="#rmdir-默认删除空文件夹" class="headerlink" title="rmdir  默认删除空文件夹"></a>rmdir  默认删除空文件夹</h5><h5 id="rmdir-p-递归删除"><a href="#rmdir-p-递归删除" class="headerlink" title="rmdir -p 递归删除"></a>rmdir -p 递归删除</h5><h4 id="删除文件和文件夹"><a href="#删除文件和文件夹" class="headerlink" title="删除文件和文件夹"></a>删除文件和文件夹</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf 文件（夹）名</span><br></pre></td></tr></table></figure>
+<h4 id="复制一个文件"><a href="#复制一个文件" class="headerlink" title="复制一个文件"></a>复制一个文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cp  [选项]   &lt;源文件路径&gt;   &lt;目标文件路径&gt;</span><br><span class="line">相关选项：</span><br><span class="line">-v : 显示进度条</span><br><span class="line">-R : 递归复制</span><br><span class="line">-p : 复制时保持文件的原有属性</span><br><span class="line">-vRp ：递归复制，保存文件的原有属性，显示进度条</span><br><span class="line">说明：复制文件时更改文件名称</span><br></pre></td></tr></table></figure>
+<h4 id="mv-移动文件"><a href="#mv-移动文件" class="headerlink" title="mv 移动文件"></a>mv 移动文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mv  [选项]   &lt;源文件路径&gt;   &lt;目标文件路径&gt;</span><br><span class="line">-v : 显示进度条</span><br><span class="line">改名</span><br><span class="line">mv  旧文件名  新文件名</span><br></pre></td></tr></table></figure>
+<h4 id="文件统计"><a href="#文件统计" class="headerlink" title="文件统计"></a>文件统计</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wc  [选项]  &lt;文件列表&gt;</span><br><span class="line">相关选项：</span><br><span class="line">-c ：统计文件的字节数</span><br><span class="line"> </span><br><span class="line">-l ：lines缩写，统计文件的行数</span><br><span class="line">-w ：word缩写，统计文件的单词数</span><br></pre></td></tr></table></figure>
+<h4 id="grep-选项-lt-字符串-gt-lt-源文件-gt"><a href="#grep-选项-lt-字符串-gt-lt-源文件-gt" class="headerlink" title="grep  [选项]  &lt;字符串&gt;  &lt;源文件&gt;"></a>grep  [选项]  &lt;字符串&gt;  &lt;源文件&gt;</h4><h5 id="说明：在一个文件中，进行查找，查找某个字符串等"><a href="#说明：在一个文件中，进行查找，查找某个字符串等" class="headerlink" title="说明：在一个文件中，进行查找，查找某个字符串等"></a>说明：在一个文件中，进行查找，查找某个字符串等</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">相关选项：</span><br><span class="line">-n ：显示匹配的行号 </span><br><span class="line">-c ：统计一共有多少行 </span><br><span class="line">-i ：ignore缩写，代表匹配时忽略大小写</span><br></pre></td></tr></table></figure>
+<h4 id="cat指令-：正序显示文件内容"><a href="#cat指令-：正序显示文件内容" class="headerlink" title="cat指令 ：正序显示文件内容"></a>cat指令 ：正序显示文件内容</h4><h4 id="tac指令-：倒序显示文件内容"><a href="#tac指令-：倒序显示文件内容" class="headerlink" title="tac指令 ：倒序显示文件内容"></a>tac指令 ：倒序显示文件内容</h4><h4 id="修改文件权限"><a href="#修改文件权限" class="headerlink" title="*修改文件权限"></a>*修改文件权限</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod  -R（递归修改） 777</span><br><span class="line">比如说：使用thinkPHP，thinkPHP会自动生成一些文件夹，或者包括图片上传，如果权限不够，那么就会运行报错了。</span><br></pre></td></tr></table></figure>
+<h4 id="修改文件的拥有者"><a href="#修改文件的拥有者" class="headerlink" title="修改文件的拥有者"></a>修改文件的拥有者</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown  -R（递归修改） root</span><br></pre></td></tr></table></figure>
+<h4 id="更改文件的所属组"><a href="#更改文件的所属组" class="headerlink" title="更改文件的所属组"></a>更改文件的所属组</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chgrp  -R（递归修改） itcast</span><br></pre></td></tr></table></figure>
+<h4 id="创建软连接"><a href="#创建软连接" class="headerlink" title="创建软连接"></a>创建软连接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln</span><br><span class="line">ln  [-s]  &lt;源文件或目录&gt;  &lt;目标文件或目录&gt; (soft简称）</span><br></pre></td></tr></table></figure>
+<h4 id="find-目录列表-匹配选项-匹配标准"><a href="#find-目录列表-匹配选项-匹配标准" class="headerlink" title="find  [目录列表]  [匹配选项]  [匹配标准]"></a>find  [目录列表]  [匹配选项]  [匹配标准]</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">find / -name 具体文件名</span><br><span class="line">相关选项：</span><br><span class="line">-name ：根据文件的名称进行搜索</span><br><span class="line"> </span><br><span class="line">-group ：根据文件的所属组进行搜索</span><br><span class="line"> </span><br><span class="line">-user ：根据文件的拥有者进行搜索</span><br><span class="line"> </span><br><span class="line">locate指令，用于检索数据 locate+文件名即可（模糊匹配），可以显示路径</span><br></pre></td></tr></table></figure>
+<h4 id="查看磁盘信息"><a href="#查看磁盘信息" class="headerlink" title="查看磁盘信息"></a>查看磁盘信息</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">df -l -h</span><br><span class="line">-l ：显示本地磁盘信息 </span><br><span class="line">-h ：以1024进制显示磁盘信息</span><br><span class="line">记下来前两个</span><br><span class="line"> </span><br><span class="line">-H ：以1000进制显示磁盘信息</span><br><span class="line">-T ：显示磁盘格式信息 </span><br><span class="line">-t ：显示指定格式的磁盘信息 </span><br><span class="line">-x ：显示除指定格式以外的其他磁盘信息</span><br></pre></td></tr></table></figure>
+<h4 id="统计文件大小"><a href="#统计文件大小" class="headerlink" title="统计文件大小"></a>统计文件大小</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">du  [选项]  文件（夹）名称</span><br><span class="line">相关选项：</span><br><span class="line">-m ：以兆的形式显示文件信息</span><br><span class="line">-s ：统计文件夹的大小</span><br><span class="line">前面2个是常用到</span><br><span class="line"></span><br><span class="line">-b ：以字节的形式显示文件信息 </span><br><span class="line">-k ：以千字节的形式显示文件信息 </span><br><span class="line">-h ：以1024进制形式显示文件信息 </span><br><span class="line">-H ：以1000进制形式显示文件信息</span><br></pre></td></tr></table></figure>
+<h4 id="查看物理设备的真实位置"><a href="#查看物理设备的真实位置" class="headerlink" title="查看物理设备的真实位置"></a>查看物理设备的真实位置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">使用fdisk指令查看</span><br><span class="line">fdisk -l | grep sd  查看以sd开头的物理设备（Linux通常以sd作为盘符）</span><br><span class="line">手工挂载</span><br><span class="line">mount   真实设备位置    挂载目录信息</span><br><span class="line">说明：真实设备位置要通过fdisk去查找</span><br></pre></td></tr></table></figure>
+<h4 id="umount-挂载目录信息"><a href="#umount-挂载目录信息" class="headerlink" title="umount  挂载目录信息"></a>umount  挂载目录信息</h4><h4 id="弹出光驱："><a href="#弹出光驱：" class="headerlink" title="弹出光驱："></a>弹出光驱：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eject指令：弹出光驱</span><br></pre></td></tr></table></figure>
+<h4 id="查询IP"><a href="#查询IP" class="headerlink" title="查询IP"></a>查询IP</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ifconfig</span><br><span class="line">inet addr:192.168.61.128</span><br></pre></td></tr></table></figure>
+<h4 id="操作网络服务"><a href="#操作网络服务" class="headerlink" title="操作网络服务"></a>操作网络服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">① service  network（服务名称）  start|stop|restart|status</span><br><span class="line">② ifup 网卡名称（eth0） ：启动第一块网卡</span><br><span class="line">③ ifdown 网卡名称（eth0） ：关闭第一块网卡</span><br></pre></td></tr></table></figure>
+<h4 id="开启关闭FTP服务等"><a href="#开启关闭FTP服务等" class="headerlink" title="开启关闭FTP服务等"></a>开启关闭FTP服务等</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service  vsftpd  start|stop|restart|status</span><br></pre></td></tr></table></figure>
+<h4 id="开启关闭ssh服务"><a href="#开启关闭ssh服务" class="headerlink" title="开启关闭ssh服务"></a>开启关闭ssh服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service  sshd   start|stop|status|restart</span><br></pre></td></tr></table></figure>
+<h4 id="解压压缩包"><a href="#解压压缩包" class="headerlink" title="解压压缩包"></a>解压压缩包</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar  -zxf   *.tar.gz</span><br><span class="line">tar  -zxf   apache.tar.gz</span><br></pre></td></tr></table></figure>
+<h4 id="定时自动执行-定时任务）contab"><a href="#定时自动执行-定时任务）contab" class="headerlink" title="定时自动执行(定时任务）contab"></a>定时自动执行(定时任务）contab</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
