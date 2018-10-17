@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="穿梭在人群里的他">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="正则表达式学习（一）"/>
+  <meta property="og:description" content="我的个人博客" />
+  <meta property="og:site_name" content="帅气依旧的我"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="帅气依旧的我" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>帅气依旧的我</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark-small.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">正则表达式学习（一）</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  首页
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/随笔">
+                  
+                  心情随笔
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/">
+                  
+                  PHP
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/">
+                  
+                  Javascript
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/">
+                  
+                  Mysql
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/Linux">
+                  
+                  Linux
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By 穿梭在人群里的他</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-10-17</span>
+            <span class="time">17:00:05</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
+
+<a href="/categories/其他/">其他</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/正则表达式/">#正则表达式</a> <a class="tag" href="/tags/javascript/">#javascript</a>
+
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h3 id="一-正在表达式的概述"><a href="#一-正在表达式的概述" class="headerlink" title="一  正在表达式的概述"></a>一  正在表达式的概述</h3><h4 id="1、正则表达式"><a href="#1、正则表达式" class="headerlink" title="1、正则表达式"></a>1、正则表达式</h4><p>正则表达式描述了一种字符串匹配的模式，可以检查一个字符串是否含有某种子字符串，将匹配到的子字符串用来提取出来或者做替换。<br><br><b>模式</b>：使用一种特殊符号来实现字符串的匹配。<br><br>本文以javascript来阐述正则表达式的基础知识和使用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">功能：使用一种特殊符号来实现字符串的匹配</span><br><span class="line">var  reg = /\d/gi;</span><br><span class="line">mysql如何匹配：</span><br><span class="line">① 精准匹配 ：select * from goods <span class="built_in">where</span> title=’iphone 7 plus’;  //一条</span><br><span class="line">② 模糊匹配 ：select * from goods <span class="built_in">where</span> title like ‘%iphone 7 plus%’;  //多条</span><br></pre></td></tr></table></figure></p>
+<h4 id="2、为什么要使用正则表达式"><a href="#2、为什么要使用正则表达式" class="headerlink" title="2、为什么要使用正则表达式"></a>2、为什么要使用正则表达式</h4><ul><br>  <li>数据隐藏 （188<strong><em>**</em></strong>092 张武功）</li><br>  <li>数据采集 （数据爬虫）</li><br>  <li>数据过滤 （数据敏感词过滤，比如一些侮辱性词语）</li><br>  <li>数据验证 （表单验证常用，比如 手机号验证、邮箱验证…）</li><br></ul>
+
+<h4 id="3、快速入门"><a href="#3、快速入门" class="headerlink" title="3、快速入门"></a>3、快速入门</h4><p>例1：查找一个字符串中是否具有数字“8”(可以使用indexOf)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var a1 = <span class="string">'ni shi ge hen shuai de ren'</span>;</span><br><span class="line">var a2 = <span class="string">'ni shi ge bu shuai de ren 12800,.....'</span>;</span><br><span class="line">var reg = /8/gi</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line"> *1、 <span class="built_in">test</span>() 检测子字符串是否存在，返回boolean值</span><br><span class="line"> */</span><br><span class="line">console.log(reg.test(a1)) </span><br><span class="line">/* 结果 <span class="literal">false</span> */</span><br><span class="line">console.log(reg.test(a2))</span><br><span class="line">/* 结果 <span class="literal">true</span> */</span><br></pre></td></tr></table></figure></p>
+<p>例2：查找一个字符串中是否具有数字（数字是从0-9，可以使用charAt）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var a1 = <span class="string">"xiyangyang"</span>;</span><br><span class="line">var a2 = <span class="string">"xiyangyang2"</span>;</span><br><span class="line">var reg = /\d/gi</span><br><span class="line"></span><br><span class="line">reg.test(a1); /* 结果 <span class="literal">false</span> */</span><br><span class="line"></span><br><span class="line">reg.test(a2); /* 结果 <span class="literal">true</span> */</span><br></pre></td></tr></table></figure></p>
+<p>例3：查找一个字符串中是否具有非数字<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var b1 = <span class="string">"zhongguo"</span>;</span><br><span class="line">var b2 = <span class="string">"zhongguonihaoa10-01"</span>;</span><br><span class="line">var reg = /\D/i;</span><br><span class="line"></span><br><span class="line">reg.test(b1);</span><br><span class="line">/* 结果 <span class="literal">true</span> */</span><br><span class="line"></span><br><span class="line">reg.test(b2);</span><br><span class="line">/* 结果 <span class="literal">true</span> */</span><br></pre></td></tr></table></figure></p>
+<h3 id="二、正则对象"><a href="#二、正则对象" class="headerlink" title="二、正则对象"></a>二、正则对象</h3><h4 id="1、为什么要要使用正则对象呢？"><a href="#1、为什么要要使用正则对象呢？" class="headerlink" title="1、为什么要要使用正则对象呢？"></a>1、为什么要要使用正则对象呢？</h4><p>在实际应用中，要使用正则表达式必须有一个前提，首先要创建正则对象</p>
+<h4 id="2、创建正则对象"><a href="#2、创建正则对象" class="headerlink" title="2、创建正则对象"></a>2、创建正则对象</h4><p>① 隐式创建<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var 正则对象 = /正则表达式/匹配模式</span><br></pre></td></tr></table></figure></p>
+<p>② 直接实例化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var 正则对象 = new RegExp(<span class="string">'正则表达式'</span>, <span class="string">'匹配模式'</span>)</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+            穿梭在人群里的他的个人博客
+        <p class="copyright text-muted">
+         采用 <a target="_blank" href="https://hexo.io/">Hexo</a> 制作
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
